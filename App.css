@@ -1,0 +1,98 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #282c34; /* Dark background */
+  color: #61dafb; /* React blue color */
+}
+
+/* Container for the entire stopwatch */
+.stopwatch-container {
+  background-color: #3a3f47; /* Slightly lighter dark background */
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Soft shadow */
+  text-align: center;
+  border: 1px solid #4a4f57; /* Subtle border */
+}
+
+/* Stopwatch title */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 25px;
+  color: #fff; /* White color for the title */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Time display area */
+.time-display {
+  font-family: 'monospace', 'Courier New', Courier, monospace; /* Monospaced font for digits */
+  font-size: 4.5em; /* Large font size for time */
+  margin-bottom: 30px;
+  color: #fff; /* White color for the time */
+  background-color: #1e1e1e; /* Very dark background for the time display */
+  padding: 15px 25px;
+  border-radius: 10px;
+  letter-spacing: 3px; /* Space out the digits a bit */
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5); /* Inner shadow for depth */
+}
+
+/* Controls section (buttons) */
+.controls {
+  display: flex;
+  gap: 15px; /* Space between buttons */
+  justify-content: center;
+}
+
+/* Styling for all buttons */
+.controls button {
+  background-color: #61dafb; /* React blue */
+  color: #282c34; /* Dark text for contrast */
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  min-width: 100px; /* Ensure consistent button width */
+  font-weight: bold;
+}
+
+/* Hover effect for buttons */
+.controls button:hover {
+  background-color: #4dcfff; /* Lighter blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active/pressed state for buttons */
+.controls button:active {
+  background-color: #32c6e6; /* Even darker blue when pressed */
+  transform: translateY(0); /* Return to original position */
+}
+
+/* Specific button colors (optional, but good for distinction) */
+.controls button:nth-child(1) { /* Start/Stop button */
+  background-color: #4CAF50; /* Green for Start/Stop (can be dynamic if you prefer) */
+  color: white;
+}
+.controls button:nth-child(1):hover {
+  background-color: #45a049;
+}
+.controls button:nth-child(1):active {
+  background-color: #3e8e41;
+}
+
+.controls button:nth-child(2) { /* Reset button */
+  background-color: #f44336; /* Red for Reset */
+  color: white;
+}
+.controls button:nth-child(2):hover {
+  background-color: #da190b;
+}
+.controls button:nth-child(2):active {
+  background-color: #c40f00;
+}
